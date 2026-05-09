@@ -95,4 +95,67 @@
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
+
+  /* ---------------- Project screen preview ---------------- */
+  const screenItems = document.querySelectorAll('.screen');
+
+  if (screenItems.length) {
+    const preview = document.createElement('div');
+    preview.className = 'screen-preview';
+    preview.setAttribute('aria-hidden', 'true');
+    preview.innerHTML = `
+      <div class="screen-preview__backdrop" data-preview-close></div>
+      <figure class="screen-preview__panel" role="dialog" aria-modal="true" aria-label="Project screen preview">
+        <button class="screen-preview__close" type="button" aria-label="Close preview" data-preview-close>&times;</button>
+        <img class="screen-preview__image" alt="" />
+        <figcaption class="screen-preview__caption"></figcaption>
+      </figure>
+    `;
+    document.body.appendChild(preview);
+
+    const previewImage = preview.querySelector('.screen-preview__image');
+    const previewCaption = preview.querySelector('.screen-preview__caption');
+    let pinned = false;
+
+    const showPreview = (screen, pin = false) => {
+      const image = screen.querySelector('img');
+      if (!image || !previewImage || !previewCaption) return;
+
+      pinned = pin;
+      previewImage.src = image.currentSrc || image.src;
+      previewImage.alt = image.alt || '';
+      previewCaption.textContent = screen.querySelector('.screen__caption')?.textContent || image.alt || 'Project screen';
+      preview.classList.add('is-visible');
+      preview.classList.toggle('is-pinned', pinned);
+      preview.setAttribute('aria-hidden', 'false');
+      document.body.classList.toggle('is-preview-open', pinned);
+    };
+
+    const hidePreview = (force = false) => {
+      if (pinned && !force) return;
+      pinned = false;
+      preview.classList.remove('is-visible', 'is-pinned');
+      preview.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('is-preview-open');
+    };
+
+    screenItems.forEach((screen) => {
+      screen.addEventListener('mouseenter', () => showPreview(screen, false));
+      screen.addEventListener('mouseleave', () => hidePreview(false));
+
+      screen.addEventListener('click', (event) => {
+        if (!screen.querySelector('img')) return;
+        event.preventDefault();
+        showPreview(screen, true);
+      });
+    });
+
+    preview.querySelectorAll('[data-preview-close]').forEach((control) => {
+      control.addEventListener('click', () => hidePreview(true));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') hidePreview(true);
+    });
+  }
 })();
