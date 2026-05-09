@@ -14,6 +14,7 @@
     '.section__header, .problem-card, .feature, .audience__card, ' +
     '.commercial__card, .screen, .value__col, .market__copy, .market__panel, ' +
     '.developer__photo, .developer__copy, .workflow__step, .solution-item, ' +
+    '.solution-card, .comparison__row, .section__note, ' +
     '.cta__inner'
   );
   revealCandidates.forEach((el) => el.classList.add('reveal'));

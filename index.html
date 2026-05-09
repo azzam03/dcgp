@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DATA CLASSIFICATION & GOVERNANCE PLATFORM — AI-supported metadata classification for data governance, privacy readiness, and professional reporting. A senior project by Azzam Esam Alquradhi." />
-  <title>Data Classification & Governance Platform — Azzam Esam Alquradhi</title>
+  <meta name="description" content="AI platform for classifying database metadata, reviewing personal data fields, and exporting professional governance reports. A senior project by Azzam Esam Alquradhi at the University of Bahrain." />
+  <title>AI Database Metadata Classification Platform | Azzam Esam Alquradhi</title>
 
-  <!-- Fonts: Fraunces (display serif) + Geist (modern body sans) + JetBrains Mono (technical labels) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,7 +16,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ========== TOP NAV ========== -->
   <header class="nav">
     <div class="container nav__inner">
       <a href="#top" class="nav__brand" aria-label="Home">
@@ -27,26 +25,26 @@
           <span class="dot"></span>
           <span class="dot active"></span>
         </span>
-        <span class="nav__brand-text">DCGP<span class="nav__brand-sub">/ Data Classification & Governance</span></span>
+        <span class="nav__brand-text">DCGP<span class="nav__brand-sub">/ AI Metadata Classification</span></span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#problem">Problem</a>
+        <a href="#market">Market</a>
         <a href="#solution">Solution</a>
         <a href="#workflow">Workflow</a>
         <a href="#features">Features</a>
-        <a href="#developer">Developer</a>
+        <a href="#screens">Screens</a>
       </nav>
 
-      <a href="#cta" class="btn btn--ghost nav__cta">Explore the Platform <span aria-hidden="true">→</span></a>
-      <button class="nav__menu" aria-label="Toggle menu" id="menuToggle">
+      <a href="https://classification-tool.onrender.com/" class="btn btn--ghost nav__cta" target="_blank" rel="noopener">Explore the Platform <span aria-hidden="true">→</span></a>
+      <button class="nav__menu" aria-label="Toggle menu" id="menuToggle" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="top">
-    <!-- ========== HERO SECTION ========== -->
     <section class="hero">
       <div class="hero__bg" aria-hidden="true">
         <div class="hero__grid"></div>
@@ -57,266 +55,248 @@
         <div class="hero__copy reveal">
           <span class="badge">
             <span class="badge__pulse"></span>
-            Senior Project · Data Governance · AI Classification · Privacy Readiness
+            Senior Project · AI Classification · Data Governance · Privacy Readiness
           </span>
 
-          <h1 class="hero__title">
-            Data classification &amp;<br />
-            governance, <em>structured</em><br />
-            for the way teams<br />
-            actually work.
-          </h1>
+          <h1 class="hero__title">Classify Database Metadata with AI — Review, Approve, Export.</h1>
+
+          <p class="hero__subtitle">
+            A web platform that takes your Excel or CSV metadata file, classifies every field by confidentiality and personal data status, and produces a professional governance report.
+          </p>
 
           <p class="hero__lede">
-            AI-supported metadata classification for data governance, privacy readiness, and professional reporting.
-            A practical senior project with real-world product potential — designed to help organizations and
-            consultants transform manual Excel-based classification into a structured AI-supported governance workflow.
+            Built as a senior project at the University of Bahrain. Designed for the way data governance work actually happens: fast first pass, human review, structured output.
           </p>
 
           <div class="hero__actions">
-            <a href="#cta" class="btn btn--primary">View Project Demo <span aria-hidden="true">→</span></a>
-            <a href="#solution" class="btn btn--secondary">Explore the Platform</a>
+            <a href="#screens" class="btn btn--primary">View Project Demo <span aria-hidden="true">↓</span></a>
+            <a href="https://classification-tool.onrender.com/" class="btn btn--secondary" target="_blank" rel="noopener">Explore the Platform <span aria-hidden="true">→</span></a>
           </div>
 
           <dl class="hero__stats">
             <div>
-              <dt>Workflow steps</dt>
-              <dd>5</dd>
+              <dt>Input</dt>
+              <dd>Excel / CSV</dd>
             </div>
             <div>
-              <dt>Core modules</dt>
-              <dd>10</dd>
+              <dt>Review</dt>
+              <dd>Human-in-the-loop</dd>
             </div>
             <div>
-              <dt>Audience</dt>
-              <dd>Governance &amp; risk teams</dd>
+              <dt>Output</dt>
+              <dd>Multi-sheet report</dd>
             </div>
           </dl>
         </div>
 
-        <!-- Developer / founder card -->
         <aside class="hero__card reveal" aria-label="Project developer">
           <div class="hero__card-frame">
             <div class="hero__card-photo">
               <img src="developer.png" alt="Azzam Esam Alquradhi, project developer" />
               <span class="hero__card-flag" aria-hidden="true">
-                <span class="hero__card-flag-dot"></span> Online
+                <span class="hero__card-flag-dot"></span> Live project
               </span>
             </div>
 
             <div class="hero__card-meta">
               <div class="hero__card-name">
-                <p class="hero__card-eyebrow">Project Owner &amp; Developer</p>
+                <p class="hero__card-eyebrow">Project Owner and Developer</p>
                 <h3>Azzam Esam Alquradhi</h3>
                 <p class="hero__card-role">Computer Science · University of Bahrain</p>
               </div>
 
               <ul class="hero__card-tags">
-                <li>Full-stack</li>
-                <li>Data Governance</li>
-                <li>AI Workflows</li>
+                <li>Node.js</li>
+                <li>OpenAI API</li>
+                <li>ExcelJS</li>
+                <li>SQLite</li>
               </ul>
             </div>
           </div>
 
-          <!-- Floating data chips around the card -->
           <div class="float-chip float-chip--a" aria-hidden="true">
             <span class="float-chip__label">Confidentiality</span>
-            <span class="float-chip__value">Confidential</span>
+            <span class="float-chip__value">4-level scheme</span>
           </div>
           <div class="float-chip float-chip--b" aria-hidden="true">
             <span class="float-chip__label">Personal Data</span>
-            <span class="float-chip__value">Detected · 17 fields</span>
+            <span class="float-chip__value">Review required</span>
           </div>
           <div class="float-chip float-chip--c" aria-hidden="true">
-            <span class="float-chip__label">Report</span>
-            <span class="float-chip__value">.xlsx ready</span>
+            <span class="float-chip__label">Export</span>
+            <span class="float-chip__value">Governance-ready .xlsx</span>
           </div>
         </aside>
       </div>
 
-      <!-- Trusted-context strip -->
       <div class="container hero__trust">
-        <p>Built around the realities of</p>
+        <p>Built for</p>
         <ul>
+          <li>PDPL readiness</li>
+          <li>·</li>
           <li>Governance reviews</li>
           <li>·</li>
-          <li>Privacy readiness</li>
-          <li>·</li>
-          <li>PDPL alignment work</li>
+          <li>Metadata audits</li>
           <li>·</li>
           <li>Consulting engagements</li>
           <li>·</li>
-          <li>System metadata audits</li>
+          <li>Repeatable reporting</li>
         </ul>
       </div>
     </section>
 
-    <!-- ========== PROBLEM SECTION ========== -->
     <section class="section section--alt" id="problem">
       <div class="container">
         <header class="section__header">
-          <span class="section__eyebrow">01 / The Problem</span>
-          <h2 class="section__title">Classification work still happens<br />in scattered Excel files.</h2>
+          <span class="section__eyebrow">01 / Problem</span>
+          <h2 class="section__title">Classifying Database Fields Manually Takes Too Long and Misses Too Much</h2>
           <p class="section__lede">
-            Speak to almost any data governance team or consultant and the same picture emerges: hundreds of systems,
-            thousands of fields, long review cycles, and an Excel sheet that nobody fully trusts. Below are the
-            recurring frictions this platform was built to address.
+            A typical classification engagement covers dozens of systems and thousands of fields. The work today is done in Excel: one analyst, one spreadsheet, one row at a time.
           </p>
         </header>
 
-        <div class="problems">
+        <div class="problems problems--cost">
           <article class="problem-card">
-            <span class="problem-card__num">01</span>
-            <h3>Volume that overwhelms</h3>
-            <p>Large numbers of systems and database fields make manual review slow, inconsistent, and exhausting to maintain.</p>
+            <span class="problem-card__num">Time</span>
+            <h3>A full week per system</h3>
+            <p>A single system can take a full week of analyst attention before review even begins.</p>
           </article>
           <article class="problem-card">
-            <span class="problem-card__num">02</span>
-            <h3>Spreadsheet-driven process</h3>
-            <p>Classification lives in Excel files passed between owners, often without versioning, validation, or audit trails.</p>
+            <span class="problem-card__num">Consistency</span>
+            <h3>Different analysts, different answers</h3>
+            <p>Two analysts can produce two different classifications for the same fields.</p>
           </article>
           <article class="problem-card">
-            <span class="problem-card__num">03</span>
-            <h3>Endless review meetings</h3>
-            <p>Cycles of meetings to debate the same fields again and again, with little structure carried between sessions.</p>
+            <span class="problem-card__num">Exposure</span>
+            <h3>Personal data gets missed</h3>
+            <p>Fields that fall under PDPL obligations are easy to overlook in a spreadsheet-only review.</p>
           </article>
           <article class="problem-card">
-            <span class="problem-card__num">04</span>
-            <h3>Personal data is hard to spot</h3>
-            <p>Identifying potential personal and sensitive fields requires context that scattered spreadsheets simply do not preserve.</p>
-          </article>
-          <article class="problem-card">
-            <span class="problem-card__num">05</span>
-            <h3>Weak privacy readiness</h3>
-            <p>Teams enter governance and privacy reviews without a clear, structured view of what data they actually hold.</p>
-          </article>
-          <article class="problem-card">
-            <span class="problem-card__num">06</span>
-            <h3>Heavy consultant dependency</h3>
-            <p>Manual interpretation by external consultants becomes the bottleneck — and the single source of expertise.</p>
+            <span class="problem-card__num">Decay</span>
+            <h3>Documentation goes stale</h3>
+            <p>The output Excel file is often stale within weeks of delivery and disconnected from future updates.</p>
           </article>
         </div>
+
+        <p class="section__note">
+          The platform was built to solve exactly this: not data governance in general, but the manual classification step that consumes the most time and produces the least durable output.
+        </p>
       </div>
     </section>
 
-    <!-- ========== MARKET NEED SECTION ========== -->
-    <section class="section">
+    <section class="section" id="market">
       <div class="container market">
         <div class="market__copy">
           <span class="section__eyebrow">02 / Market Need</span>
-          <h2 class="section__title">Why the market needs<br />a tool like this.</h2>
+          <h2 class="section__title">Bahrain and Saudi Arabia Now Require What Most Teams Cannot Produce</h2>
           <p class="market__paragraph">
-            Data governance, privacy readiness, and data classification have moved from optional initiatives into core
-            organizational priorities. Organizations cannot govern, protect, or responsibly use data they have not
-            properly understood — and that understanding starts at the metadata layer.
+            The Bahrain Personal Data Protection Law and the Saudi Personal Data Protection Law both assume that organizations know what personal data they hold and where. Most do not, not because they do not try, but because no practical tool exists between two extremes.
           </p>
           <p class="market__paragraph">
-            Yet most teams still rely on manual spreadsheets, repeated reviews, and informal handoffs. That gap leaves
-            real room for practical, lightweight tools that support classification and governance workflows without the
-            weight of an enterprise platform rollout.
+            This platform sits in the middle: light enough to deploy in a day, structured enough to produce auditable output.
           </p>
         </div>
 
-        <aside class="market__panel" aria-label="Market signals">
-          <h3>Recurring market signals</h3>
+        <aside class="market__panel" aria-label="Market gap">
+          <h3>The gap between two extremes</h3>
           <ul>
             <li>
-              <span class="market__panel-tag">Governance</span>
-              Increasing focus on knowing what data exists before applying controls.
+              <span class="market__panel-tag">Enterprise</span>
+              Enterprise platforms such as Microsoft Purview, BigID, and OneTrust are too heavy and too expensive for a single classification engagement.
             </li>
             <li>
-              <span class="market__panel-tag">Privacy</span>
-              Growing pressure to identify and review personal data fields proactively.
-            </li>
-            <li>
-              <span class="market__panel-tag">Operations</span>
-              Demand for lighter tools that fit consulting and project-based work.
-            </li>
-            <li>
-              <span class="market__panel-tag">Reporting</span>
-              Need for structured, presentable outputs for review committees.
+              <span class="market__panel-tag">Manual</span>
+              Manual spreadsheets are too slow and too inconsistent to deliver reliable classification output.
             </li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <!-- ========== SOLUTION SECTION ========== -->
     <section class="section section--dark" id="solution">
       <div class="container">
         <header class="section__header section__header--center">
-          <span class="section__eyebrow section__eyebrow--light">03 / The Solution</span>
-          <h2 class="section__title section__title--light">A governance workflow,<br />not just a file uploader.</h2>
+          <span class="section__eyebrow section__eyebrow--light">03 / Solution</span>
+          <h2 class="section__title section__title--light">What the Platform Actually Does</h2>
           <p class="section__lede section__lede--light">
-            The platform turns scattered classification work into a structured, repeatable workflow — combining AI
-            assistance with human review where it matters most.
+            The platform takes one input and produces one output, with structured review in between.
           </p>
         </header>
 
-        <div class="solution-grid">
-          <div class="solution-item"><span>01</span><p>Create and manage systems</p></div>
-          <div class="solution-item"><span>02</span><p>Upload Excel or CSV metadata files</p></div>
-          <div class="solution-item"><span>03</span><p>Classify metadata fields using AI</p></div>
-          <div class="solution-item"><span>04</span><p>Detect possible personal data fields</p></div>
-          <div class="solution-item"><span>05</span><p>Review and edit classification results</p></div>
-          <div class="solution-item"><span>06</span><p>Approve personal data records</p></div>
-          <div class="solution-item"><span>07</span><p>Add PDPL-related governance notes</p></div>
-          <div class="solution-item"><span>08</span><p>Export structured Excel reports</p></div>
+        <div class="solution-brief">
+          <article class="solution-card solution-card--input">
+            <span>Input</span>
+            <h3>Excel or CSV metadata</h3>
+            <p>An uploaded file containing database metadata such as table names, column names, and data types.</p>
+          </article>
+
+          <article class="solution-card solution-card--process">
+            <span>Process</span>
+            <h3>AI classification with review</h3>
+            <ul>
+              <li>Fields are sent in batches to the OpenAI API.</li>
+              <li>Each field receives a confidentiality level, classification reason, personal data flag, and personal data reason.</li>
+              <li>Results are stored in a database and displayed for review.</li>
+              <li>The user corrects AI errors, approves personal data fields, and adds PDPL governance notes.</li>
+            </ul>
+          </article>
+
+          <article class="solution-card solution-card--output">
+            <span>Output</span>
+            <h3>Formatted governance report</h3>
+            <p>A multi-sheet Excel report with Overall, System Data, Personal Data, and PDPL sheets ready for client delivery or internal documentation.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== HOW IT WORKS SECTION ========== -->
     <section class="section" id="workflow">
       <div class="container">
         <header class="section__header">
           <span class="section__eyebrow">04 / How It Works</span>
-          <h2 class="section__title">From upload to report,<br />in five clear steps.</h2>
+          <h2 class="section__title">From system registration to export in five clear steps.</h2>
           <p class="section__lede">
-            The workflow is intentionally linear. Each step produces an artifact the next step builds on — so progress
-            is visible, reviewable, and easy to hand over.
+            The workflow keeps the AI pass fast while preserving the human review needed for real governance work.
           </p>
         </header>
 
         <ol class="workflow">
           <li class="workflow__step">
             <div class="workflow__num">01</div>
-            <h3>Create System</h3>
-            <p>Register the system, capture context, and prepare it to receive metadata for classification.</p>
+            <h3>Register a System</h3>
+            <p>Add the system name, owner, group, and any context notes that help interpret the data.</p>
           </li>
           <li class="workflow__step">
             <div class="workflow__num">02</div>
-            <h3>Upload Metadata File</h3>
-            <p>Import an Excel or CSV file containing database fields, descriptions, and supporting context.</p>
+            <h3>Upload Metadata</h3>
+            <p>Drop in an Excel or CSV file containing table and column information.</p>
           </li>
           <li class="workflow__step">
             <div class="workflow__num">03</div>
             <h3>Run AI Classification</h3>
-            <p>The platform suggests confidentiality levels and flags fields that may contain personal data.</p>
+            <p>The platform groups fields by table, sends them to the OpenAI API, and stores the structured response.</p>
           </li>
           <li class="workflow__step">
             <div class="workflow__num">04</div>
-            <h3>Review &amp; PDPL Notes</h3>
-            <p>Reviewers verify suggestions, approve personal data records, and attach governance notes.</p>
+            <h3>Review and Approve</h3>
+            <p>Use the Edit View to fix AI errors. Use the Personal Data tab to approve fields that genuinely qualify as personal data.</p>
           </li>
           <li class="workflow__step">
             <div class="workflow__num">05</div>
-            <h3>Export Final Report</h3>
-            <p>Generate a structured, styled Excel report ready for governance review and documentation.</p>
+            <h3>Export</h3>
+            <p>Download a multi-sheet Excel report. Hand it to a client, use it as documentation, and update it next quarter.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- ========== FEATURES SECTION ========== -->
     <section class="section section--alt" id="features">
       <div class="container">
         <header class="section__header">
           <span class="section__eyebrow">05 / Key Features</span>
-          <h2 class="section__title">Ten capabilities, one<br />governance workflow.</h2>
+          <h2 class="section__title">The pieces needed for a repeatable classification workflow.</h2>
           <p class="section__lede">
-            Each feature is built to support a specific moment in classification work — from intake to handover.
+            Each feature supports a practical governance task, from intake to approval to client-ready reporting.
           </p>
         </header>
 
@@ -328,8 +308,8 @@
                 <circle cx="18" cy="17" r="2.5" />
               </svg>
             </div>
-            <h3>AI-Based Metadata Classification</h3>
-            <p>Field-level classification suggestions generated from metadata context.</p>
+            <h3>AI Classification Engine</h3>
+            <p>Powered by the OpenAI API with structured JSON responses and batch processing by table.</p>
           </article>
 
           <article class="feature">
@@ -339,8 +319,8 @@
                 <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3>Confidentiality Level Detection</h3>
-            <p>Each field is mapped to a confidentiality level for governance review.</p>
+            <h3>Confidentiality Detection</h3>
+            <p>Four-level scheme: Public, Internal, Confidential, and Strictly Confidential.</p>
           </article>
 
           <article class="feature">
@@ -350,8 +330,8 @@
                 <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke-linecap="round" />
               </svg>
             </div>
-            <h3>Personal Data Discovery</h3>
-            <p>Highlights fields likely to contain personal data for closer review.</p>
+            <h3>Personal Data Flagging</h3>
+            <p>Each field is independently flagged with reasoning.</p>
           </article>
 
           <article class="feature">
@@ -360,8 +340,8 @@
                 <path d="M4 19l5-1.5 9-9-3.5-3.5-9 9L4 19z" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3>Manual Review &amp; Edit View</h3>
-            <p>Reviewers can adjust AI suggestions inline before they are finalized.</p>
+            <h3>Edit View</h3>
+            <p>Override any AI classification; changes persist immediately.</p>
           </article>
 
           <article class="feature">
@@ -371,8 +351,8 @@
                 <path d="M3 6h12" stroke-linecap="round" />
               </svg>
             </div>
-            <h3>Personal Data Approval Workflow</h3>
-            <p>A dedicated step to formally approve personal data records.</p>
+            <h3>Personal Data Approval</h3>
+            <p>Record-level approve and revoke; only approved records flow to PDPL.</p>
           </article>
 
           <article class="feature">
@@ -382,19 +362,8 @@
                 <path d="M4 9h16M9 4v16" />
               </svg>
             </div>
-            <h3>PDPL Review Page</h3>
-            <p>A dedicated workspace to capture PDPL-related governance notes.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M12 4v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M5 20h14" stroke-linecap="round" />
-              </svg>
-            </div>
-            <h3>Excel / CSV Import</h3>
-            <p>Import metadata directly from the formats teams already use today.</p>
+            <h3>PDPL Governance Page</h3>
+            <p>Add review status and governance notes per personal data field.</p>
           </article>
 
           <article class="feature">
@@ -404,8 +373,19 @@
                 <path d="M8 8h8M8 12h8M8 16h5" stroke-linecap="round" />
               </svg>
             </div>
-            <h3>Professional Excel Export</h3>
-            <p>Styled, structured Excel reports suitable for governance handover.</p>
+            <h3>Multi-Sheet Excel Export</h3>
+            <p>Overall, System Data, Personal Data, and PDPL sheets, professionally formatted.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M7 7h10M7 12h7M7 17h10" stroke-linecap="round" />
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+              </svg>
+            </div>
+            <h3>System Context</h3>
+            <p>Tag-based notes attached to each system.</p>
           </article>
 
           <article class="feature">
@@ -417,8 +397,8 @@
                 <path d="M8 11l8-4M8 13l8 4" />
               </svg>
             </div>
-            <h3>System Context &amp; Links</h3>
-            <p>Tie classification results back to systems and their metadata context.</p>
+            <h3>System Links</h3>
+            <p>Categorized reference URLs for data dictionaries, documentation, and regulatory references.</p>
           </article>
 
           <article class="feature">
@@ -427,182 +407,213 @@
                 <path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke-linecap="round" />
               </svg>
             </div>
-            <h3>Dashboard &amp; Progress Tracking</h3>
-            <p>A clear overview of where each system sits in the classification workflow.</p>
+            <h3>Dashboard</h3>
+            <p>Multi-system overview with classification status per system.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== ACADEMIC + BUSINESS VALUE ========== -->
     <section class="section">
       <div class="container value">
         <article class="value__col">
-          <span class="section__eyebrow">06 / Academic Contribution</span>
-          <h2 class="value__title">Academic depth,<br />grounded in real software.</h2>
+          <span class="section__eyebrow">06 / Academic Value</span>
+          <h2 class="value__title">What This Project Demonstrates Academically</h2>
           <p class="value__intro">
-            The project demonstrates the application of data governance concepts inside a working software system,
-            rather than as a theoretical study.
+            The project applies four areas of computer science to a single working system.
           </p>
           <ul class="value__list">
-            <li>Applying data governance concepts in a real software system.</li>
-            <li>Connecting AI classification with structured metadata management.</li>
-            <li>Designing a workflow that combines automation with human review.</li>
-            <li>Building a full-stack platform with database persistence and reporting.</li>
-            <li>Translating a real market problem into requirements and implementation.</li>
+            <li>Data governance theory: DAMA-DMBOK classification concepts implemented as software.</li>
+            <li>AI integration: OpenAI API used inside a structured, persistent, human-in-the-loop workflow.</li>
+            <li>Full-stack engineering: Node.js, Express, SQLite, ExcelJS, OpenAI SDK, and session-based authentication.</li>
+            <li>Software requirements engineering: Context Diagram, Level 0 and Level 1 DFDs, ERD, Structured English specifications, and twelve unit test cases.</li>
           </ul>
+          <p class="value__footnote">
+            The project is documented as a senior project report under the supervision of Dr. Abdulla Ahmed Alasaadi, with all DFDs, the ERD, and the testing strategy traceable from requirements to implementation.
+          </p>
         </article>
 
         <article class="value__col value__col--accent">
           <span class="section__eyebrow">07 / Business Value</span>
-          <h2 class="value__title">Practical value,<br />measured in time saved.</h2>
-          <p class="value__intro">
-            The platform replaces ad-hoc spreadsheets with a structured workflow that teams can actually rely on.
+          <h2 class="value__title">What Changes When a Team Uses This Platform</h2>
+          <div class="comparison" aria-label="Business value comparison">
+            <div class="comparison__head">
+              <span>Today</span>
+              <span>With the Platform</span>
+            </div>
+            <div class="comparison__row">
+              <span>Each analyst writes a fresh Excel.</span>
+              <span>Every system follows the same workflow.</span>
+            </div>
+            <div class="comparison__row">
+              <span>30+ fields per hour at best.</span>
+              <span>AI processes a full system in minutes.</span>
+            </div>
+            <div class="comparison__row">
+              <span>Personal data fields missed in review.</span>
+              <span>Personal data routed to a dedicated approval track.</span>
+            </div>
+            <div class="comparison__row">
+              <span>Output format varies by analyst.</span>
+              <span>Consistent multi-sheet Excel, every time.</span>
+            </div>
+            <div class="comparison__row">
+              <span>File becomes stale and disconnected.</span>
+              <span>Persistent database; results editable anytime.</span>
+            </div>
+          </div>
+          <p class="value__footnote">
+            The platform does not replace the analyst. It removes the tedious first pass so the analyst can spend time on the parts that need judgment.
           </p>
-          <ul class="value__list">
-            <li>Reduces manual Excel work and repetitive cleanup.</li>
-            <li>Improves classification consistency across systems.</li>
-            <li>Supports governance and privacy readiness initiatives.</li>
-            <li>Helps teams understand system data faster.</li>
-            <li>Produces professional reports suitable for review and documentation.</li>
-            <li>Can be expanded into a SaaS product or internal consulting tool.</li>
-          </ul>
         </article>
       </div>
     </section>
 
-    <!-- ========== TARGET USERS SECTION ========== -->
     <section class="section section--alt">
       <div class="container">
         <header class="section__header">
           <span class="section__eyebrow">08 / Designed For</span>
-          <h2 class="section__title">Built around the people<br />doing this work today.</h2>
-          <p class="section__lede">
-            Every workflow decision was shaped by the kinds of teams that handle classification, review, and reporting
-            on a daily basis.
-          </p>
+          <h2 class="section__title">Built for the teams responsible for classification and privacy readiness.</h2>
         </header>
 
         <div class="audience">
           <article class="audience__card">
             <h3>Data Governance Consultants</h3>
-            <p>An accelerator for repeated classification engagements across multiple clients and systems.</p>
+            <p>Running multi-system classification engagements.</p>
           </article>
           <article class="audience__card">
-            <h3>Data Governance Teams</h3>
-            <p>A structured workspace to manage classification, reviews, and documentation in one place.</p>
+            <h3>Internal Governance Teams</h3>
+            <p>Maintaining ongoing data inventories.</p>
           </article>
           <article class="audience__card">
-            <h3>Risk &amp; Compliance Teams</h3>
-            <p>Visibility into where personal and sensitive data sits, ahead of formal reviews.</p>
+            <h3>Risk and Compliance Officers</h3>
+            <p>Preparing for PDPL review.</p>
           </article>
           <article class="audience__card">
-            <h3>Privacy Readiness Programs</h3>
-            <p>A practical starting point for organizations preparing for governance and privacy initiatives.</p>
+            <h3>Organizations Starting a Governance Program</h3>
+            <p>Needing a structured entry point.</p>
           </article>
           <article class="audience__card">
             <h3>Consulting Firms</h3>
-            <p>A lightweight tool to standardize classification work delivered to clients and partners.</p>
+            <p>Looking for a repeatable workflow across clients.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== COMMERCIAL POTENTIAL SECTION ========== -->
     <section class="section">
       <div class="container">
         <header class="section__header">
           <span class="section__eyebrow">09 / Commercial Potential</span>
-          <h2 class="section__title">From senior project<br />to product opportunity.</h2>
+          <h2 class="section__title">Where the Project Goes from Here</h2>
           <p class="section__lede">
-            The current platform is a strong foundation. With focused iteration, it can extend in several practical
-            directions — without overstating its current scope.
+            The senior project version is a working single-tenant application. The path to a commercial product is concrete.
           </p>
         </header>
 
         <div class="commercial">
           <article class="commercial__card">
-            <h3>SaaS Platform</h3>
-            <p>A hosted product for in-house data governance teams managing classification across systems.</p>
+            <h3>SaaS product</h3>
+            <p>Multi-tenant deployment for governance teams who want a permanent classification tool.</p>
           </article>
           <article class="commercial__card">
-            <h3>Consulting Accelerator</h3>
-            <p>An internal tool for consulting firms to deliver classification engagements faster and more consistently.</p>
+            <h3>Consulting accelerator</h3>
+            <p>Used by firms internally to deliver classification engagements faster.</p>
           </article>
           <article class="commercial__card">
-            <h3>Privacy Readiness Tool</h3>
-            <p>A lightweight option for teams preparing for privacy reviews and PDPL-aligned assessments.</p>
+            <h3>Privacy readiness tool</h3>
+            <p>Packaged specifically for PDPL-driven assessments.</p>
           </article>
           <article class="commercial__card">
-            <h3>Governance Reporting</h3>
-            <p>A focused reporting layer that turns classification work into structured, presentable documentation.</p>
-          </article>
-          <article class="commercial__card">
-            <h3>Portfolio Demonstrator</h3>
-            <p>A practical showcase of full-stack engineering, AI integration, and applied governance thinking.</p>
+            <h3>Foundation for further features</h3>
+            <p>Direct database connectivity, sector-specific rules, GDPR support, and audit trail.</p>
           </article>
         </div>
+
+        <p class="section__note">
+          The market gap between enterprise platforms and manual spreadsheets is the project's product opportunity. The senior project version is the proof that the workflow works.
+        </p>
       </div>
     </section>
 
-    <!-- ========== SCREENS / PREVIEW SECTION ========== -->
-    <section class="section section--alt">
+    <section class="section section--alt" id="screens">
       <div class="container">
         <header class="section__header">
-          <span class="section__eyebrow">10 / Platform Preview</span>
-          <h2 class="section__title">A look at the workspace.</h2>
-          <p class="section__lede">
-            Placeholders for the core screens of the platform. Replace each one with a real screenshot when available.
-          </p>
+          <span class="section__eyebrow">10 / Project Screens</span>
+          <h2 class="section__title">The platform workflow, screen by screen.</h2>
         </header>
 
         <div class="screens">
           <article class="screen">
             <div class="screen__frame">
-              <img src="sign up.png" alt="Login Page" style="width: 100%; height: auto; display: block;">
+              <img src="sign up.png" alt="Login Page" />
             </div>
             <p class="screen__caption">Login Page</p>
           </article>
 
           <article class="screen">
             <div class="screen__frame">
-              <img src="Dashboard.png" alt="Dashboard" style="width: 100%; height: auto; display: block;">
+              <img src="Dashboard.png" alt="Dashboard" />
             </div>
             <p class="screen__caption">Dashboard</p>
           </article>
 
           <article class="screen">
-            <div class="screen__frame">
-              <img src="System Data.png" alt="System Data" style="width: 100%; height: auto; display: block;">
+            <div class="screen__frame screen__frame--placeholder">
+              <div class="screen__mock screen__mock--form" aria-hidden="true">
+                <span></span><span></span><span></span><strong></strong>
+              </div>
             </div>
-            <p class="screen__caption">System Data</p>
+            <p class="screen__caption">Add New System</p>
           </article>
 
           <article class="screen">
             <div class="screen__frame">
-              <img src="Personal Data.png" alt="Personal Data" style="width: 100%; height: auto; display: block;">
+              <img src="System Data.png" alt="System Data Classification View" />
             </div>
-            <p class="screen__caption">Personal Data</p>
+            <p class="screen__caption">System Data — Classification View</p>
           </article>
 
           <article class="screen">
             <div class="screen__frame">
-              <img src="PDPL.png" alt="PDPL Review" style="width: 100%; height: auto; display: block;">
+              <img src="System Data.png" alt="System Data Edit View" />
             </div>
-            <p class="screen__caption">PDPL Review</p>
+            <p class="screen__caption">System Data — Edit View</p>
           </article>
 
           <article class="screen">
             <div class="screen__frame">
-              <img src="Excel Export.png" alt="Excel Export" style="width: 100%; height: auto; display: block;">
+              <img src="Personal Data.png" alt="Personal Data Tab" />
             </div>
-            <p class="screen__caption">Excel Export</p>
+            <p class="screen__caption">Personal Data Tab</p>
+          </article>
+
+          <article class="screen">
+            <div class="screen__frame">
+              <img src="PDPL.png" alt="PDPL Tab" />
+            </div>
+            <p class="screen__caption">PDPL Tab</p>
+          </article>
+
+          <article class="screen">
+            <div class="screen__frame screen__frame--placeholder">
+              <div class="screen__mock screen__mock--context" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <p class="screen__caption">System Context Tab</p>
+          </article>
+
+          <article class="screen">
+            <div class="screen__frame">
+              <img src="Excel Export.png" alt="Excel Export Preview" />
+            </div>
+            <p class="screen__caption">Excel Export Preview</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== ABOUT THE DEVELOPER SECTION ========== -->
     <section class="section" id="developer">
       <div class="container developer">
         <div class="developer__photo">
@@ -610,67 +621,60 @@
             <img src="developer.png" alt="Azzam Esam Alquradhi" />
           </div>
           <div class="developer__photo-tag">
-            <span class="developer__photo-tag-line">Project Owner</span>
+            <span class="developer__photo-tag-line">Developer</span>
             <span class="developer__photo-tag-name">Azzam Esam Alquradhi</span>
           </div>
         </div>
 
         <div class="developer__copy">
           <span class="section__eyebrow">11 / About the Developer</span>
-          <h2 class="section__title">A senior project<br />shaped by real observations.</h2>
+          <h2 class="section__title">Azzam Esam Alquradhi</h2>
 
           <p class="developer__paragraph">
-            Developed by <strong>Azzam Esam Alquradhi</strong>, Computer Science student at the
-            <strong>University of Bahrain</strong>. The project reflects his interest in data governance, data
-            classification, AI-supported workflows, and practical technology solutions for real business problems.
+            Computer Science, University of Bahrain.
           </p>
 
-          <blockquote class="developer__quote">
-            <p>
-              "This project was inspired by real observations from consulting and data governance work, where manual
-              classification, Excel-based processes, and privacy readiness challenges are common. The goal was to build
-              something that would actually help — not just demonstrate a concept."
-            </p>
-            <footer>— Azzam Esam Alquradhi</footer>
-          </blockquote>
+          <p class="developer__paragraph">
+            This project came from watching real classification work happen the hard way: in Excel files, across long meetings, without consistent output. The platform is an attempt to solve that problem in a way that is actually usable.
+          </p>
+
+          <p class="developer__paragraph">
+            It reflects a focus on data governance, practical AI applications, and software that addresses operational problems rather than hypothetical ones.
+          </p>
 
           <ul class="developer__skills">
-            <li>Full-Stack Development</li>
             <li>Data Governance</li>
-            <li>AI-Supported Workflows</li>
+            <li>Practical AI</li>
+            <li>Full-Stack Engineering</li>
             <li>Excel Reporting</li>
-            <li>Database Design</li>
-            <li>Product Thinking</li>
+            <li>Requirements Engineering</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ========== FINAL CTA SECTION ========== -->
     <section class="cta" id="cta">
       <div class="container cta__inner">
-        <span class="section__eyebrow section__eyebrow--light">12 / Get Started</span>
-        <h2 class="cta__title">A practical step toward<br />smarter data governance.</h2>
+        <span class="section__eyebrow section__eyebrow--light">12 / Final CTA</span>
+        <h2 class="cta__title">See the Platform in Action</h2>
         <p class="cta__lede">
-          The platform demonstrates how AI can support repetitive data classification tasks while keeping human review
-          and governance judgment part of the workflow.
+          The senior project version is live. You can register, create a system, upload metadata, run classification, and download a report: the full workflow, end to end.
         </p>
-        <a href="#top" class="btn btn--primary btn--xl">Explore the Platform <span aria-hidden="true">→</span></a>
+        <a href="https://classification-tool.onrender.com/" class="btn btn--primary btn--xl" target="_blank" rel="noopener">Explore the Platform <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
         <span class="footer__brand-mark">DCGP</span>
-        <p>Data Classification &amp; Governance Platform</p>
+        <p>Data Classification and Governance Platform</p>
       </div>
 
       <div class="footer__meta">
         <p>Senior Project · University of Bahrain</p>
-        <p>Designed &amp; developed by Azzam Esam Alquradhi</p>
+        <p>Designed and developed by Azzam Esam Alquradhi</p>
       </div>
 
       <p class="footer__small">
